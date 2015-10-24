@@ -16,7 +16,7 @@ Steps to use this App:
 
 - Select a pair of variables
 
-- Select number of clusters required (from 2 to 4 clusters)
+- Select number of clusters required (maximum 5 clusters)
 
 The variables available in the mtcars dataset are:
 
