@@ -12,15 +12,15 @@ shinyUI(
                   selected=names(mtcars)[[2]]),
                   
                   #select the no of clusters
-                  selectInput('clustercount', 'Select number of Clusters desired:', choices = c('2','3','4')),
-            
+                  sliderInput('clustercount', 'Select number of Clusters desired:', min=2, max=5, value=2, step=1),
+                  
                   strong(p('Documentation:')),
                   p("This is a basic App for Pairwise K-Means clustering on mtcars Dataset."),
                   p(" On the side panel you can select the pair of variables and also select the
                     number of desired clusters for the K-Means clustersing."),
                   strong(p('Steps to use this App:')),
                   p("- Select a pair of variables"),
-                  p("- Select number of clusters required (from 2 to 4 clusters)"),
+                  p("- Select number of clusters required (maximum 5 clusters)"),
                   p("The variables available in the mtcars dataset are:"), 
                   p("mpg - Miles/(US) gallon, 
                    cyl - Number of cylinders, 
